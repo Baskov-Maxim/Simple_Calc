@@ -1,6 +1,6 @@
 #include <iostream>
 
-double input_digit()		// Функция для ввода числа
+double input_digit()		// Р¤СѓРЅРєС†РёСЏ РґР»СЏ РІРІРѕРґР° С‡РёСЃР»Р°
 {
 	double num;
 	std::cin >> num;
@@ -8,7 +8,7 @@ double input_digit()		// Функция для ввода числа
 	return num;
 }
 
-char input_operation()		// Функция выбора операции (+,-,*,/)
+char input_operation()		// Р¤СѓРЅРєС†РёСЏ РІС‹Р±РѕСЂР° РѕРїРµСЂР°С†РёРё (+,-,*,/)
 {
 	char operation;
 	std::cin >> operation;
@@ -16,10 +16,10 @@ char input_operation()		// Функция выбора операции (+,-,*,/)
 	return operation;
 }
 
-// Фунция в которой происходят  расчёты уравнения
+// Р¤СѓРЅС†РёСЏ РІ РєРѕС‚РѕСЂРѕР№ РїСЂРѕРёСЃС…РѕРґСЏС‚  СЂР°СЃС‡С‘С‚С‹ СѓСЂР°РІРЅРµРЅРёСЏ
 double calc_result(double num1, char operation, double num2)
 {
-	switch (operation)	// Выбор операции
+	switch (operation)	// Р’С‹Р±РѕСЂ РѕРїРµСЂР°С†РёРё
 	{
 		case 43:
 			return (num2 + num1);
@@ -34,8 +34,8 @@ double calc_result(double num1, char operation, double num2)
 
 void do_calc()
 {
-	std::cout << "Программа калькулятор:\n";	// Вывод "имени" программы
+	std::cout << "РџСЂРѕРіСЂР°РјРјР° РєР°Р»СЊРєСѓР»СЏС‚РѕСЂ:\n";	// // Р’С‹РІРѕРґ "РёРјРµРЅРё" РїСЂРѕРіСЂР°РјРјС‹
 
-	// Вывод результата написан в одну строчку для сокращения кода и экономии ресурсов
+	// Р’С‹РІРѕРґ СЂРµР·СѓР»СЊС‚Р°С‚Р° РЅР°РїРёСЃР°РЅ РІ РѕРґРЅСѓ СЃС‚СЂРѕС‡РєСѓ РґР»СЏ СЃРѕРєСЂР°С‰РµРЅРёСЏ РєРѕРґР° Рё СЌРєРѕРЅРѕРјРёРё СЂРµСЃСѓСЂСЃРѕРІ
 	std::cout << calc_result(input_digit(), input_operation(), input_digit()) << std::endl;
 }
