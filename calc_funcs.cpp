@@ -34,7 +34,7 @@ double calc_result(double num1, char operation, double num2)
 
 void do_calc()
 {
-	std::cout << "Программа калькулятор:\n";	// // Вывод "имени" программы
+	std::cout << "Программа калькулятор:\n";	// Вывод "имени" программы
 
 	// Вывод результата написан в одну строчку для сокращения кода и экономии ресурсов
 	std::cout << calc_result(input_digit(), input_operation(), input_digit()) << std::endl;
